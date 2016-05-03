@@ -1,20 +1,18 @@
-var React = require('react');
+import React from 'react'
+import Content from './components/Content'
+import Header from './components/Header'
+import Favicon from 'react-favicon'
 
-var Header = require('./Components/Header');
-var Content = require('./Components/Content');
-var Favicon = require('react-favicon');
+const faviconUrl = require('./assets/favicon.ico');
 
-var faviconUrl = require('./Assets/favicon.ico');
-
-module.exports = React.createClass({
-  displayName: 'App',
-
-  render: function () {
-    return (<div>
-              <Header/>
-              <Content/>
-              <Favicon url={ faviconUrl }/>
-            </div>)
+export default class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header/>
+        <Content/>
+        <Favicon url={ faviconUrl }/>
+      </div>
+    )
   }
-
-});
+}

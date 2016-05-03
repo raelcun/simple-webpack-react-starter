@@ -15,9 +15,7 @@ module.exports = function (config) {
     reporters: [ 'dots' ], //report results in this format
     webpack: { //kind of a copy of your webpack config
       devtool: 'inline-source-map', //just do inline source maps instead of the default
-      module: {
-        loaders: commonConfig.loaders
-      }
+      module: commonConfig.module
     },
     webpackServer: {
       noInfo: true //please don't spam the console when running in karma!
