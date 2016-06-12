@@ -92,7 +92,7 @@ To do a test run:
 npm test
 ```
 
-And to run continuous tests which rerun everytime a file changes:
+And to run continuous tests which rerun every time a file changes:
 
 ```sh
 npm run testing
